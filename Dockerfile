@@ -7,6 +7,9 @@ WORKDIR /app
 
 COPY . .
 
+# Copy .env file
+COPY .env.example .env
+
 ARG POSTGRES_USER
 ENV POSTGRES_USER=${POSTGRES_USER}
 ARG POSTGRES_PASSWORD
