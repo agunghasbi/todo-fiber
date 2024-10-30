@@ -10,4 +10,4 @@ RUN go mod tidy
 
 RUN go build -o binary
 
-ENTYPOINT["/app/binary"]
+ENTYPOINT ["/app/binary"]
