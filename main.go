@@ -24,7 +24,7 @@ type Activity struct {
 
 func init() {
 	// Load environment variables from .env file
-	err := godotenv.Load()
+	err := godotenv.Load(".env")
 	if err != nil {
 		log.Fatalf("Error loading .env file")
 	}
